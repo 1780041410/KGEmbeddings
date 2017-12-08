@@ -266,44 +266,49 @@ void EmbeddingModel::resetNegTriples() {
 }
 
 void EmbeddingModel::resetOutEntity() {
+    const std::set<unsigned> & outEntity = _ds.outentity();
+    std::set<unsigned>::iterator it;
 
+    for (unsigned i = 0; i < _ds.updateSize(); ++i){
+        std::vector<unsigned> neighbor;
+        const Triple & tmpi = _ds.updateset()[i];
+        it = outEntity.find(tmpi.h);
+        //std::cout<<"averagePooling";
 
-            std::set<unsigned>outEntity;
-            std::set<unsigned>::iterator it;
-            outEntity = _ds.outentity();
-
-        for (unsigned i = 0; i < _ds.updateSize(); ++i){
-            std::vector<unsigned>neighbor ;
-            Triple tmpi = *(_ds.updateset() + i);
-            unsigned hi  = tmpi.h;
-            unsigned ri = tmpi.r;
-            unsigned ti = tmpi.t;
-            it = outEntity.find(hi);
-            //std::cout<<"averagePooling";
-
-            if(*(it)){
-                
-                for (unsigned j = 0; j < _ds.updateSize(); ++j){
-                    if(i == j) continue;
-                    Triple tmpj = *(_ds.updateset() + j);
-                    unsigned hj  = tmpj.h;
-                    unsigned rj = tmpj.r;
-                    unsigned tj = tmpj.t;
-                    if(ri == rj && ti == tj)
+        if (it != outEntity.end()) {
+            for (unsigned j = 0; j < _ds.updateSize(); ++j)
+                if (i != j) {
+                    const Triple & tmpj = _ds.updateset()[j]);
+                    if(tmpi.r == tmpj.r && tmpi.t == tmpj.t)
                         neighbor.push_back(j);
                 }
-                std::cout<<"averagePooling";
+            std::cout<<"averagePooling";
 
-
-                unsigned num = neighbor.size();
-                for (unsigned k = 0; k < num; ++k){
-                    vecPooling(vh(*(_ds.updateset() + i)),_dim,vh(*(_ds.updateset() + neighbor[k])),num);
-
-                }
-
-            }
+            vecPooling(i, neighbor);
         }
+    }
+}
 
+void EmbeddingModel::vecPooling(unsigned eid, const std::vector<unsigned> & neighbors) {
+    if (!neighbors.empty()) {
+        float * vec = _ed.second[eid];
+        for (unsigned i = 0; i < _dim; ++i)
+            vec[i] = 0;
+        for (auto & neighbor : neighbors)
+            for (unsigned i = 0; i < _dim; ++i)
+                vec[i] += _ed.second[neightbor][i];
+        norm(vec, _dim);
+    }
+}
 
-
+void EmbeddingModel::maxPooling(unsigned eid, const std::vector<unsigned> & neighbors) {
+    if (!neighbors.empty()) {
+        float * vec = _ed.second[eid];
+        for (unsigned i = 0; i < _dim; ++i)
+            vec[i] = -1;
+        for (auto & neighbor : neighbors)
+            for (unsigned i = 0; i < _dim; ++i)
+                vec[i] = std::max(vec[i], _ed.second[neightbor][i]);
+        norm(vec, _dim);
+    }
 }

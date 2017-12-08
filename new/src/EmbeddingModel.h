@@ -64,13 +64,6 @@ protected:
         norm(vec, size);
     }
 
-    static inline void vecPooling(float * vec, unsigned size,float * neighbor,int num) {
-        for (unsigned i = 0; i < size; ++i){
-            vec[i] += neighbor[i] / num ;
-        }
-        norm(vec,size);
-    }
-
     static inline void matrixReset(float ** matrix, unsigned n, unsigned m) {
         for (unsigned i = 0; i < n; ++i)
             vecReset(matrix[i], m);
@@ -142,6 +135,9 @@ protected:
             norm(vh(sample.second), _dim);
     }
     virtual void update_core(const Triple & triple, short label, float rate) = 0;
+
+    virtual void vecPooling(unsigned eid, const std::vector<unsigned> & neighbors);
+    virtual void maxPooling(unsigned eid, const std::vector<unsigned> & neighbors);
 
     static void single_output(const std::string & filename,
                     unsigned num, unsigned dim, float ** mat);

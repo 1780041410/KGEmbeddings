@@ -67,17 +67,12 @@ private:
 
     std::set<unsigned> _outentity;
 
-
     Triple * _all, * _pos_hrt, * _ptu, *_pt, * _pos_rht, * _pos_trh;
     Triple * _trainset, * _updateset, * _testset, * _validset;
     unsigned _allsize, _trainsize, _updatesize, _testsize, _validsize, _possize, _ptusize, _ptsize;
     unsigned * _count_by_h, * _count_by_r, * _count_by_t;
     unsigned * _head_by_h, * _head_by_r, * _head_by_t;
-    //
-    unsigned _entityNum, _relationNum,_outentityNum;
-
-
-
+    unsigned _entityNum, _relationNum, _outentityNum;
 
 protected:
     void readTriples(const std::string & filename, std::vector<Triple> & target,
