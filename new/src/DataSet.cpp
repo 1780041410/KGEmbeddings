@@ -39,8 +39,14 @@ DataSet::DataSet(const std::string & name) : _NAME(name) {
         _relation2id[str] = id;
     fin.close();
 
+    fin.open(("data/" + name + "/" + "ookbEntity.txt").c_str());
+    while(fin >> str)
+        _outentity.insert(_entity2id[str]);
+    fin.close();
+
     _entityNum = _entity2id.size();
     _relationNum = _relation2id.size();
+    _outentityNum = _outentity.size();
 
     _count_by_h = new unsigned[_entityNum];
     _count_by_r = new unsigned[_relationNum];

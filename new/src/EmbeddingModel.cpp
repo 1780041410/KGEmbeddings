@@ -260,7 +260,50 @@ void EmbeddingModel::resetNegTriples() {
     for (unsigned i = 0; i < _ds.updateSize(); ++i)
         if (!(_ds.updateset() + i)->f) {
             vecReset(vh(*(_ds.updateset() + i)), _dim);
-            vecReset(vr(*(_ds.updateset() + i)), _dim);
+            //vecReset(vr(*(_ds.updateset() + i)), _dim);
             vecReset(vt(*(_ds.updateset() + i)), _dim);
         }
+}
+
+void EmbeddingModel::resetOutEntity() {
+
+
+            std::set<unsigned>outEntity;
+            std::set<unsigned>::iterator it;
+            outEntity = _ds.outentity();
+
+        for (unsigned i = 0; i < _ds.updateSize(); ++i){
+            std::vector<unsigned>neighbor ;
+            Triple tmpi = *(_ds.updateset() + i);
+            unsigned hi  = tmpi.h;
+            unsigned ri = tmpi.r;
+            unsigned ti = tmpi.t;
+            it = outEntity.find(hi);
+            //std::cout<<"averagePooling";
+
+            if(*(it)){
+                
+                for (unsigned j = 0; j < _ds.updateSize(); ++j){
+                    if(i == j) continue;
+                    Triple tmpj = *(_ds.updateset() + j);
+                    unsigned hj  = tmpj.h;
+                    unsigned rj = tmpj.r;
+                    unsigned tj = tmpj.t;
+                    if(ri == rj && ti == tj)
+                        neighbor.push_back(j);
+                }
+                std::cout<<"averagePooling";
+
+
+                unsigned num = neighbor.size();
+                for (unsigned k = 0; k < num; ++k){
+                    vecPooling(vh(*(_ds.updateset() + i)),_dim,vh(*(_ds.updateset() + neighbor[k])),num);
+
+                }
+
+            }
+        }
+
+
+
 }

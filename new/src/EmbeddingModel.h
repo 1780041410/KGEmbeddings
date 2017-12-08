@@ -63,6 +63,14 @@ protected:
             vec[i] = _rd.randn(0, 1.0 / size, -6 / sqrt(size), 6 / sqrt(size));
         norm(vec, size);
     }
+
+    static inline void vecPooling(float * vec, unsigned size,float * neighbor,int num) {
+        for (unsigned i = 0; i < size; ++i){
+            vec[i] += neighbor[i] / num ;
+        }
+        norm(vec,size);
+    }
+
     static inline void matrixReset(float ** matrix, unsigned n, unsigned m) {
         for (unsigned i = 0; i < n; ++i)
             vecReset(matrix[i], m);
@@ -148,6 +156,8 @@ public:
     }
 
     virtual void resetNegTriples();
+
+    virtual void resetOutEntity();
 
     virtual inline void cache_store() {
         if (_use_cache) {

@@ -88,8 +88,8 @@ void TransH::resetNegTriples() {
     for (unsigned i = 0; i < _ds.updateSize(); ++i)
         if (!(_ds.updateset() + i)->f) {
             vecReset(vh(*(_ds.updateset() + i)), _dim);
-            vecReset(vr(*(_ds.updateset() + i)), _dim);
+            //vecReset(vr(*(_ds.updateset() + i)), _dim);
             vecReset(vt(*(_ds.updateset() + i)), _dim);
-            vecReset(vrp(*(_ds.updateset() + i)), _dim);
+            //vecReset(vrp(*(_ds.updateset() + i)), _dim);
         }
 }
