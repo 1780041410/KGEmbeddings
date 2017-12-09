@@ -15,11 +15,13 @@ Train::Train(EmbeddingModel * em, SamplingModel * sm, float rate, float margin, 
 void Train::launch(const std::string & mode, unsigned nepoch, unsigned output, bool silence) {
     if (mode != "testonly") {
         if (mode == "update") {
-            //_em->resetNegTriples();
+            _em->resetNegTriples();
             _em->resetOutEntity();
             if (_em->dsname() == "FB15k" || _em->dsname() == "WN18")
                 _em->runLinkPredictionTest(std::cout, _threads);
             else if (_em->dsname() == "FB13" || _em->dsname() == "WN11")
+                _em->runClassificationTest(std::cout);
+            else
                 _em->runClassificationTest(std::cout);
         }
         if (output == 0)
@@ -55,6 +57,8 @@ void Train::launch(const std::string & mode, unsigned nepoch, unsigned output, b
                     _em->runLinkPredictionTest(std::cout, _threads);
                 else if (_em->dsname() == "FB13" || _em->dsname() == "WN11")
                     _em->runClassificationTest(std::cout);
+                else
+                    _em->runClassificationTest(std::cout);
         }
         std::stringstream ss;
         ss << ext << "-epoch-" << nepoch;
@@ -64,6 +68,8 @@ void Train::launch(const std::string & mode, unsigned nepoch, unsigned output, b
         if (_em->dsname() == "FB15k" || _em->dsname() == "WN18")
             _em->runLinkPredictionTest(std::cout, _threads);
         else if (_em->dsname() == "FB13" || _em->dsname() == "WN11")
+            _em->runClassificationTest(std::cout);
+        else
             _em->runClassificationTest(std::cout);
     }
 }

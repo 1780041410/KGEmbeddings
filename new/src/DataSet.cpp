@@ -38,11 +38,12 @@ DataSet::DataSet(const std::string & name) : _NAME(name) {
     while (fin >> str >> id)
         _relation2id[str] = id;
     fin.close();
-
-    fin.open(("data/" + name + "/" + "ookbEntity.txt").c_str());
-    while(fin >> str)
-        _outentity.insert(_entity2id[str]);
-    fin.close();
+    if( name.length() > 4){
+        fin.open(("data/" + name + "/" + "ookbEntity.txt").c_str());
+        while(fin >> str)
+            _outentity.insert(_entity2id[str]);
+        fin.close();
+    }
 
     _entityNum = _entity2id.size();
     _relationNum = _relation2id.size();

@@ -270,45 +270,54 @@ void EmbeddingModel::resetOutEntity() {
     std::set<unsigned>::iterator it;
 
     for (unsigned i = 0; i < _ds.updateSize(); ++i){
-        std::vector<unsigned> neighbor;
+        std::vector<unsigned> neighborH,neighborT;
         const Triple & tmpi = _ds.updateset()[i];
         it = outEntity.find(tmpi.h);
-        //std::cout<<"averagePooling";
-
-        if (it != outEntity.end()) {
+        if (it != outEntity.end()) {  //head pooling
             for (unsigned j = 0; j < _ds.updateSize(); ++j)
                 if (i != j) {
-                    const Triple & tmpj = _ds.updateset()[j]);
+                    const Triple & tmpj = _ds.updateset()[j];
                     if(tmpi.r == tmpj.r && tmpi.t == tmpj.t)
-                        neighbor.push_back(j);
+                        neighborH.push_back(j);
                 }
-            std::cout<<"averagePooling";
 
-            vecPooling(i, neighbor);
+            vecPooling(i, neighborH);
+        }
+
+
+        it = outEntity.find(tmpi.t);
+        if(it != outEntity.end()) {
+            for (unsigned j = 0; j < _ds.updateSize(); ++j)
+                if(i != j) {
+                    const Triple & tmpj = _ds.updateset()[j];
+                    if(tmpi.r == tmpj.r && tmpi.h == tmpj.h)
+                        neighborT.push_back(j);
+                }
+            vecPooling(i,neighborT); // repalce with maxPooling()    
         }
     }
 }
 
 void EmbeddingModel::vecPooling(unsigned eid, const std::vector<unsigned> & neighbors) {
     if (!neighbors.empty()) {
-        float * vec = _ed.second[eid];
+        float * vec = _ed->second[eid];
         for (unsigned i = 0; i < _dim; ++i)
             vec[i] = 0;
         for (auto & neighbor : neighbors)
             for (unsigned i = 0; i < _dim; ++i)
-                vec[i] += _ed.second[neightbor][i];
+                vec[i] += _ed->second[neighbor][i];
         norm(vec, _dim);
     }
 }
 
 void EmbeddingModel::maxPooling(unsigned eid, const std::vector<unsigned> & neighbors) {
     if (!neighbors.empty()) {
-        float * vec = _ed.second[eid];
+        float * vec = _ed->second[eid];
         for (unsigned i = 0; i < _dim; ++i)
             vec[i] = -1;
         for (auto & neighbor : neighbors)
             for (unsigned i = 0; i < _dim; ++i)
-                vec[i] = std::max(vec[i], _ed.second[neightbor][i]);
+                vec[i] = std::max(vec[i], _ed->second[neighbor][i]);
         norm(vec, _dim);
     }
 }
