@@ -278,10 +278,10 @@ void EmbeddingModel::resetOutEntity() {
                 if (i != j) {
                     const Triple & tmpj = _ds.updateset()[j];
                     if(tmpi.r == tmpj.r && tmpi.t == tmpj.t)
-                        neighborH.push_back(j);
+                        neighborH.push_back(tmpj.h);
                 }
 
-            vecPooling(i, neighborH);
+            vecPooling(tmpi.h, neighborH);
         }
 
 
@@ -291,9 +291,9 @@ void EmbeddingModel::resetOutEntity() {
                 if(i != j) {
                     const Triple & tmpj = _ds.updateset()[j];
                     if(tmpi.r == tmpj.r && tmpi.h == tmpj.h)
-                        neighborT.push_back(j);
+                        neighborT.push_back(tmpj.t);
                 }
-            vecPooling(i,neighborT); // repalce with maxPooling()    
+            vecPooling(tmpi.t,neighborT); // repalce with maxPooling()    
         }
     }
 }
