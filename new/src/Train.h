@@ -46,7 +46,7 @@ public:
         return _margin;
     }
 
-    void launch(const std::string & mode, unsigned nepoch, unsigned output, bool silence);
+    void launch(const std::string & mode, unsigned nepoch, unsigned output, bool silence,const std::string & pooling);
 };
 
 }

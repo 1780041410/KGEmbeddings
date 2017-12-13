@@ -153,7 +153,7 @@ public:
 
     virtual void resetNegTriples();
 
-    virtual void resetOutEntity();
+    virtual void resetOutEntity(const std::string & pooling);
 
     virtual inline void cache_store() {
         if (_use_cache) {

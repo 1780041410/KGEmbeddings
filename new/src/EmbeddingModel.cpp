@@ -181,6 +181,10 @@ void EmbeddingModel::runLinkPredictionTest(std::ostream & os, unsigned threadnum
     if (!np)
         os << hrsum/ftestnum << ' ' << hrhit/ftestnum << ' ' << hfsum/ftestnum << ' ' << hfhit/ftestnum << ' '
            << trsum/ftestnum << ' ' << trhit/ftestnum << ' ' << tfsum/ftestnum << ' ' << tfhit/ftestnum << std::endl;
+    if(!np)
+        os << "raw:" << ' ' << "mean " << (hrsum + trsum)/(2*ftestnum)<< ' ' << "hit10 " << (hrhit + trhit)/(2*ftestnum) << '\n'
+           << "filter:" << ' ' << "mean " << (hfsum + tfsum)/(2*ftestnum) << "hit10 " << (hfhit + tfhit)/(2*ftestnum) << std::endl;
+
     for (unsigned i = 0; i < threadnum; ++i)
         delete threads[i];
 }
@@ -265,7 +269,7 @@ void EmbeddingModel::resetNegTriples() {
         }
 }
 
-void EmbeddingModel::resetOutEntity() {
+void EmbeddingModel::resetOutEntity(const std::string & pooling) {
     const std::set<unsigned> & outEntity = _ds.outentity();
     std::set<unsigned>::iterator it;
 
@@ -280,9 +284,11 @@ void EmbeddingModel::resetOutEntity() {
                     if(tmpi.r == tmpj.r && tmpi.t == tmpj.t)
                         neighborH.push_back(tmpj.h);
                 }
-
-            vecPooling(tmpi.h, neighborH);
-        }
+            if(pooling == "average")
+                vecPooling(tmpi.h, neighborH);
+            else
+                maxPooling(tmpi.h, neighborH);
+        }   
 
 
         it = outEntity.find(tmpi.t);
@@ -293,7 +299,10 @@ void EmbeddingModel::resetOutEntity() {
                     if(tmpi.r == tmpj.r && tmpi.h == tmpj.h)
                         neighborT.push_back(tmpj.t);
                 }
-            vecPooling(tmpi.t,neighborT); // repalce with maxPooling()    
+            if(pooling == "average")
+                vecPooling(tmpi.t,neighborT); // repalce with maxPooling()
+            else 
+                maxPooling(tmpi.t, neighborT); 
         }
     }
 }

@@ -12,17 +12,19 @@ using namespace sysukg;
 Train::Train(EmbeddingModel * em, SamplingModel * sm, float rate, float margin, unsigned threads) :
     _em(em), _sm(sm), _rate(rate), _margin(margin), _threads(threads) {}
 
-void Train::launch(const std::string & mode, unsigned nepoch, unsigned output, bool silence) {
+void Train::launch(const std::string & mode, unsigned nepoch, unsigned output, bool silence,const std::string & pooling) {
     if (mode != "testonly") {
         if (mode == "update") {
             _em->resetNegTriples();
-            _em->resetOutEntity();
+            
             if (_em->dsname() == "FB15k" || _em->dsname() == "WN18")
                 _em->runLinkPredictionTest(std::cout, _threads);
             else if (_em->dsname() == "FB13" || _em->dsname() == "WN11")
                 _em->runClassificationTest(std::cout);
-            else
+            else{
+                _em->resetOutEntity(pooling);
                 _em->runClassificationTest(std::cout);
+            }
         }
         if (output == 0)
             output = nepoch + 1;

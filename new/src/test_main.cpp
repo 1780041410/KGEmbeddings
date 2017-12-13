@@ -30,6 +30,7 @@ int main(int argc, char ** argv) {
                 emname = "TransE",  // {TransE, TransH, TransD}
                 smname = "unif",    // {unif, bern, update}
                 ext = "",
+                pooling = "average",
                 mode = "retrain"; // {testonly, retrain, basetrain, update, generate_np, update_info}
     unsigned nepoch = 1000,
              dim = 50,
@@ -54,7 +55,7 @@ int main(int argc, char ** argv) {
     if ((i = ArgPos((char*)"-output", argc, argv)) > 0) output = atoi(argv[i + 1]);
     if ((i = ArgPos((char*)"-silence", argc, argv)) > 0) silence = true;
     if ((i = ArgPos((char*)"-alpha", argc, argv)) > 0) alpha = atof(argv[i + 1]);
-
+    if ((i = ArgPos((char*)"-pooling", argc, argv)) > 0) pooling = argv[i + 1];
     ds = new DataSet(dsname);
 
     if (mode == "generate_np") {
@@ -96,7 +97,7 @@ int main(int argc, char ** argv) {
             exit(1);
         }
         Train train(em, sm, rate, margin, threads);
-        train.launch(mode, nepoch, output, silence);
+        train.launch(mode, nepoch, output, silence,pooling);
     }
     return 0;
 }
