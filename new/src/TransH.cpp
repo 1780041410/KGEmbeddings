@@ -85,11 +85,31 @@ TransH::~TransH() {
 }
 
 void TransH::resetNegTriples() {
+    /*for (unsigned i = 0; i < _ds.updateSize(); ++i)
+        if (!(_ds.updateset() + i)->f) {
+            //vecReset(vh(*(_ds.updateset() + i)), _dim);
+            //vecReset(vr(*(_ds.updateset() + i)), _dim);
+            //vecReset(vt(*(_ds.updateset() + i)), _dim);
+            //vecReset(vrp(*(_ds.updateset() + i)), _dim);
+        }*/
+    std::map<unsigned, unsigned> relationClass = _ds.getRelationClass();
+
     for (unsigned i = 0; i < _ds.updateSize(); ++i)
         if (!(_ds.updateset() + i)->f) {
-            vecReset(vh(*(_ds.updateset() + i)), _dim);
+            const Triple & tmpi = _ds.updateset()[i];
+
+            if (relationClass[tmpi.r] == 3){  //1-to-many
+                vecReset(vt(*(_ds.updateset() + i)), _dim);
+                
+            } 
+            else if (relationClass[tmpi.r] == 4){ // many-to-1
+                vecReset(vh(*(_ds.updateset() + i)), _dim);
+            }
+            else
+
+            //vecReset(vh(*(_ds.updateset() + i)), _dim);
             //vecReset(vr(*(_ds.updateset() + i)), _dim);
             vecReset(vt(*(_ds.updateset() + i)), _dim);
-            //vecReset(vrp(*(_ds.updateset() + i)), _dim);
+
         }
 }
