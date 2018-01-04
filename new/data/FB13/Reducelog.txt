@@ -1,0 +1,2 @@
+./FB13/update.txt	PosTriples	5908NegTriple	5908
+./FB13/update1.txt	PosTriples	5908NegTriple	2306

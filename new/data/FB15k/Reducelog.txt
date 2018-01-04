@@ -1,0 +1,2 @@
+./FB15k/update.txt	PosTriples	50000NegTriple	50000
+./FB15k/update1.txt	PosTriples	50000NegTriple	19513

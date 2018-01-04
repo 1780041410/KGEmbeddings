@@ -1,0 +1,1232 @@
+epoch     0 : 131650.688
+epoch     1 : 116846.055
+epoch     2 : 107739.484
+epoch     3 : 100761.727
+epoch     4 :  95142.117
+epoch     5 :  89665.422
+epoch     6 :  84548.500
+epoch     7 :  80252.531
+epoch     8 :  76351.141
+epoch     9 :  71881.000
+epoch    10 :  67719.586
+epoch    11 :  64081.832
+epoch    12 :  60657.453
+epoch    13 :  56457.004
+epoch    14 :  52756.777
+epoch    15 :  49256.785
+epoch    16 :  46055.148
+epoch    17 :  43084.602
+epoch    18 :  39693.625
+epoch    19 :  37312.078
+epoch    20 :  34359.297
+epoch    21 :  31806.439
+epoch    22 :  29245.680
+epoch    23 :  27252.145
+epoch    24 :  25162.117
+epoch    25 :  23280.883
+epoch    26 :  21599.811
+epoch    27 :  20068.225
+epoch    28 :  18561.098
+epoch    29 :  17175.984
+epoch    30 :  16271.201
+epoch    31 :  14852.994
+epoch    32 :  13917.124
+epoch    33 :  13060.298
+epoch    34 :  12173.214
+epoch    35 :  11499.682
+epoch    36 :  10691.879
+epoch    37 :  10007.057
+epoch    38 :   9526.221
+epoch    39 :   9048.702
+epoch    40 :   8600.942
+epoch    41 :   7986.020
+epoch    42 :   7492.618
+epoch    43 :   7134.730
+epoch    44 :   6775.691
+epoch    45 :   6597.455
+epoch    46 :   6192.956
+epoch    47 :   5808.759
+epoch    48 :   5580.745
+epoch    49 :   5231.883
+epoch    50 :   4918.911
+epoch    51 :   4770.198
+epoch    52 :   4541.927
+epoch    53 :   4330.280
+epoch    54 :   4168.234
+epoch    55 :   4003.386
+epoch    56 :   3893.866
+epoch    57 :   3664.552
+epoch    58 :   3520.093
+epoch    59 :   3446.360
+epoch    60 :   3192.999
+epoch    61 :   3131.967
+epoch    62 :   3055.804
+epoch    63 :   2920.098
+epoch    64 :   2860.650
+epoch    65 :   2814.372
+epoch    66 :   2704.006
+epoch    67 :   2614.932
+epoch    68 :   2484.100
+epoch    69 :   2477.228
+epoch    70 :   2367.261
+epoch    71 :   2305.621
+epoch    72 :   2236.000
+epoch    73 :   2236.956
+epoch    74 :   2188.215
+epoch    75 :   2080.393
+epoch    76 :   2028.107
+epoch    77 :   1966.688
+epoch    78 :   1940.625
+epoch    79 :   1889.273
+epoch    80 :   1862.662
+epoch    81 :   1783.152
+epoch    82 :   1763.715
+epoch    83 :   1704.740
+epoch    84 :   1613.823
+epoch    85 :   1650.171
+epoch    86 :   1649.948
+epoch    87 :   1557.843
+epoch    88 :   1504.066
+epoch    89 :   1458.382
+epoch    90 :   1425.748
+epoch    91 :   1424.419
+epoch    92 :   1363.808
+epoch    93 :   1370.264
+epoch    94 :   1335.857
+epoch    95 :   1287.214
+epoch    96 :   1257.830
+epoch    97 :   1226.720
+epoch    98 :   1220.797
+epoch    99 :   1174.257
+epoch   100 :   1147.870
+epoch   101 :   1181.041
+epoch   102 :   1150.411
+epoch   103 :   1121.029
+epoch   104 :   1076.724
+epoch   105 :   1063.778
+epoch   106 :   1050.706
+epoch   107 :   1072.363
+epoch   108 :   1040.817
+epoch   109 :   1018.902
+epoch   110 :   1000.885
+epoch   111 :    984.732
+epoch   112 :    971.774
+epoch   113 :    947.686
+epoch   114 :    942.997
+epoch   115 :    926.097
+epoch   116 :    920.763
+epoch   117 :    920.498
+epoch   118 :    921.363
+epoch   119 :    876.869
+epoch   120 :    857.122
+epoch   121 :    874.171
+epoch   122 :    850.620
+epoch   123 :    821.629
+epoch   124 :    797.086
+epoch   125 :    791.669
+epoch   126 :    825.243
+epoch   127 :    819.773
+epoch   128 :    824.517
+epoch   129 :    792.960
+epoch   130 :    790.808
+epoch   131 :    749.958
+epoch   132 :    746.171
+epoch   133 :    758.671
+epoch   134 :    771.328
+epoch   135 :    776.340
+epoch   136 :    731.752
+epoch   137 :    715.189
+epoch   138 :    734.128
+epoch   139 :    724.302
+epoch   140 :    692.438
+epoch   141 :    692.704
+epoch   142 :    672.372
+epoch   143 :    680.824
+epoch   144 :    689.657
+epoch   145 :    639.533
+epoch   146 :    663.712
+epoch   147 :    671.971
+epoch   148 :    643.915
+epoch   149 :    644.709
+epoch   150 :    649.838
+epoch   151 :    643.537
+epoch   152 :    618.688
+epoch   153 :    615.210
+epoch   154 :    605.560
+epoch   155 :    595.645
+epoch   156 :    595.417
+epoch   157 :    584.571
+epoch   158 :    574.560
+epoch   159 :    579.597
+epoch   160 :    590.918
+epoch   161 :    588.065
+epoch   162 :    588.347
+epoch   163 :    571.749
+epoch   164 :    569.261
+epoch   165 :    573.943
+epoch   166 :    558.163
+epoch   167 :    540.168
+epoch   168 :    556.251
+epoch   169 :    564.556
+epoch   170 :    525.506
+epoch   171 :    547.696
+epoch   172 :    513.963
+epoch   173 :    529.169
+epoch   174 :    511.006
+epoch   175 :    496.145
+epoch   176 :    496.022
+epoch   177 :    503.009
+epoch   178 :    514.983
+epoch   179 :    493.916
+epoch   180 :    488.489
+epoch   181 :    465.479
+epoch   182 :    495.135
+epoch   183 :    472.995
+epoch   184 :    475.658
+epoch   185 :    473.431
+epoch   186 :    478.617
+epoch   187 :    466.695
+epoch   188 :    492.254
+epoch   189 :    469.163
+epoch   190 :    466.734
+epoch   191 :    465.133
+epoch   192 :    445.034
+epoch   193 :    455.742
+epoch   194 :    435.316
+epoch   195 :    454.653
+epoch   196 :    440.640
+epoch   197 :    450.348
+epoch   198 :    438.614
+epoch   199 :    428.795
+epoch   200 :    423.283
+epoch   201 :    437.450
+epoch   202 :    407.411
+epoch   203 :    414.463
+epoch   204 :    430.092
+epoch   205 :    411.255
+epoch   206 :    429.920
+epoch   207 :    421.885
+epoch   208 :    414.052
+epoch   209 :    393.337
+epoch   210 :    396.310
+epoch   211 :    401.311
+epoch   212 :    407.534
+epoch   213 :    404.694
+epoch   214 :    402.228
+epoch   215 :    404.383
+epoch   216 :    372.512
+epoch   217 :    390.192
+epoch   218 :    362.396
+epoch   219 :    355.405
+epoch   220 :    389.943
+epoch   221 :    387.369
+epoch   222 :    368.762
+epoch   223 :    362.224
+epoch   224 :    367.590
+epoch   225 :    377.221
+epoch   226 :    367.363
+epoch   227 :    356.979
+epoch   228 :    375.209
+epoch   229 :    390.632
+epoch   230 :    351.787
+epoch   231 :    363.603
+epoch   232 :    349.348
+epoch   233 :    357.457
+epoch   234 :    340.981
+epoch   235 :    340.181
+epoch   236 :    341.664
+epoch   237 :    349.813
+epoch   238 :    345.704
+epoch   239 :    331.767
+epoch   240 :    347.910
+epoch   241 :    324.007
+epoch   242 :    347.847
+epoch   243 :    323.031
+epoch   244 :    329.593
+epoch   245 :    323.437
+epoch   246 :    332.010
+epoch   247 :    341.465
+epoch   248 :    333.315
+epoch   249 :    334.648
+epoch   250 :    318.696
+epoch   251 :    313.295
+epoch   252 :    322.829
+epoch   253 :    339.079
+epoch   254 :    311.908
+epoch   255 :    317.337
+epoch   256 :    312.539
+epoch   257 :    304.769
+epoch   258 :    320.988
+epoch   259 :    332.027
+epoch   260 :    311.419
+epoch   261 :    305.105
+epoch   262 :    297.508
+epoch   263 :    307.263
+epoch   264 :    302.759
+epoch   265 :    311.744
+epoch   266 :    301.535
+epoch   267 :    304.651
+epoch   268 :    298.698
+epoch   269 :    271.716
+epoch   270 :    291.625
+epoch   271 :    292.851
+epoch   272 :    290.731
+epoch   273 :    304.181
+epoch   274 :    299.005
+epoch   275 :    299.812
+epoch   276 :    294.770
+epoch   277 :    299.659
+epoch   278 :    274.651
+epoch   279 :    286.401
+epoch   280 :    287.320
+epoch   281 :    265.064
+epoch   282 :    267.055
+epoch   283 :    294.588
+epoch   284 :    277.595
+epoch   285 :    283.264
+epoch   286 :    269.768
+epoch   287 :    274.288
+epoch   288 :    263.732
+epoch   289 :    275.894
+epoch   290 :    265.811
+epoch   291 :    281.561
+epoch   292 :    258.877
+epoch   293 :    271.135
+epoch   294 :    266.164
+epoch   295 :    266.640
+epoch   296 :    252.216
+epoch   297 :    253.299
+epoch   298 :    272.557
+epoch   299 :    262.623
+epoch   300 :    248.221
+epoch   301 :    241.949
+epoch   302 :    260.825
+epoch   303 :    243.883
+epoch   304 :    258.925
+epoch   305 :    257.234
+epoch   306 :    244.154
+epoch   307 :    255.037
+epoch   308 :    247.866
+epoch   309 :    246.822
+epoch   310 :    253.993
+epoch   311 :    248.928
+epoch   312 :    247.060
+epoch   313 :    248.383
+epoch   314 :    235.102
+epoch   315 :    237.378
+epoch   316 :    256.945
+epoch   317 :    247.670
+epoch   318 :    258.198
+epoch   319 :    242.844
+epoch   320 :    242.261
+epoch   321 :    246.851
+epoch   322 :    239.673
+epoch   323 :    250.787
+epoch   324 :    223.873
+epoch   325 :    242.263
+epoch   326 :    242.468
+epoch   327 :    224.281
+epoch   328 :    242.674
+epoch   329 :    250.768
+epoch   330 :    231.154
+epoch   331 :    232.441
+epoch   332 :    215.175
+epoch   333 :    221.233
+epoch   334 :    241.055
+epoch   335 :    235.084
+epoch   336 :    221.077
+epoch   337 :    234.795
+epoch   338 :    209.050
+epoch   339 :    218.386
+epoch   340 :    227.748
+epoch   341 :    229.745
+epoch   342 :    210.633
+epoch   343 :    219.952
+epoch   344 :    227.116
+epoch   345 :    237.149
+epoch   346 :    210.901
+epoch   347 :    229.290
+epoch   348 :    215.939
+epoch   349 :    207.036
+epoch   350 :    231.257
+epoch   351 :    218.473
+epoch   352 :    205.766
+epoch   353 :    220.567
+epoch   354 :    217.115
+epoch   355 :    211.502
+epoch   356 :    213.041
+epoch   357 :    210.925
+epoch   358 :    211.253
+epoch   359 :    219.383
+epoch   360 :    223.974
+epoch   361 :    224.389
+epoch   362 :    203.166
+epoch   363 :    212.921
+epoch   364 :    211.411
+epoch   365 :    192.245
+epoch   366 :    206.205
+epoch   367 :    196.936
+epoch   368 :    193.524
+epoch   369 :    234.871
+epoch   370 :    185.757
+epoch   371 :    216.779
+epoch   372 :    200.573
+epoch   373 :    203.221
+epoch   374 :    200.962
+epoch   375 :    199.510
+epoch   376 :    205.438
+epoch   377 :    210.476
+epoch   378 :    200.806
+epoch   379 :    195.562
+epoch   380 :    202.740
+epoch   381 :    206.856
+epoch   382 :    186.747
+epoch   383 :    192.385
+epoch   384 :    181.427
+epoch   385 :    188.262
+epoch   386 :    198.057
+epoch   387 :    181.491
+epoch   388 :    192.629
+epoch   389 :    182.091
+epoch   390 :    185.702
+epoch   391 :    202.109
+epoch   392 :    197.718
+epoch   393 :    192.669
+epoch   394 :    194.854
+epoch   395 :    215.874
+epoch   396 :    191.278
+epoch   397 :    191.526
+epoch   398 :    199.925
+epoch   399 :    197.747
+epoch   400 :    185.070
+epoch   401 :    185.259
+epoch   402 :    198.982
+epoch   403 :    176.751
+epoch   404 :    191.274
+epoch   405 :    177.905
+epoch   406 :    188.782
+epoch   407 :    191.963
+epoch   408 :    189.158
+epoch   409 :    191.730
+epoch   410 :    176.396
+epoch   411 :    177.047
+epoch   412 :    185.183
+epoch   413 :    184.497
+epoch   414 :    192.751
+epoch   415 :    187.588
+epoch   416 :    175.937
+epoch   417 :    192.893
+epoch   418 :    172.001
+epoch   419 :    195.060
+epoch   420 :    168.557
+epoch   421 :    173.706
+epoch   422 :    172.968
+epoch   423 :    182.555
+epoch   424 :    193.988
+epoch   425 :    175.789
+epoch   426 :    174.095
+epoch   427 :    159.644
+epoch   428 :    180.790
+epoch   429 :    165.648
+epoch   430 :    179.543
+epoch   431 :    172.650
+epoch   432 :    170.021
+epoch   433 :    164.515
+epoch   434 :    170.097
+epoch   435 :    166.909
+epoch   436 :    150.511
+epoch   437 :    165.984
+epoch   438 :    172.530
+epoch   439 :    175.025
+epoch   440 :    177.740
+epoch   441 :    171.637
+epoch   442 :    177.705
+epoch   443 :    153.053
+epoch   444 :    167.925
+epoch   445 :    161.103
+epoch   446 :    161.474
+epoch   447 :    168.429
+epoch   448 :    171.089
+epoch   449 :    165.922
+epoch   450 :    168.302
+epoch   451 :    164.953
+epoch   452 :    162.687
+epoch   453 :    154.663
+epoch   454 :    157.910
+epoch   455 :    156.862
+epoch   456 :    163.255
+epoch   457 :    161.701
+epoch   458 :    154.079
+epoch   459 :    152.935
+epoch   460 :    146.665
+epoch   461 :    153.898
+epoch   462 :    146.470
+epoch   463 :    161.761
+epoch   464 :    148.038
+epoch   465 :    152.762
+epoch   466 :    171.440
+epoch   467 :    162.965
+epoch   468 :    149.913
+epoch   469 :    159.941
+epoch   470 :    152.423
+epoch   471 :    165.702
+epoch   472 :    162.708
+epoch   473 :    150.215
+epoch   474 :    143.402
+epoch   475 :    151.172
+epoch   476 :    148.242
+epoch   477 :    150.701
+epoch   478 :    158.100
+epoch   479 :    149.873
+epoch   480 :    144.201
+epoch   481 :    149.072
+epoch   482 :    162.352
+epoch   483 :    145.152
+epoch   484 :    149.791
+epoch   485 :    148.465
+epoch   486 :    145.515
+epoch   487 :    146.006
+epoch   488 :    144.283
+epoch   489 :    152.229
+epoch   490 :    145.787
+epoch   491 :    148.585
+epoch   492 :    152.181
+epoch   493 :    142.202
+epoch   494 :    140.710
+epoch   495 :    145.396
+epoch   496 :    152.905
+epoch   497 :    148.409
+epoch   498 :    149.364
+epoch   499 :    147.898
+epoch   500 :    145.659
+epoch   501 :    149.094
+epoch   502 :    140.129
+epoch   503 :    145.115
+epoch   504 :    146.767
+epoch   505 :    141.255
+epoch   506 :    136.528
+epoch   507 :    153.998
+epoch   508 :    145.448
+epoch   509 :    146.118
+epoch   510 :    139.980
+epoch   511 :    142.952
+epoch   512 :    145.717
+epoch   513 :    142.802
+epoch   514 :    141.117
+epoch   515 :    132.600
+epoch   516 :    142.531
+epoch   517 :    137.528
+epoch   518 :    135.936
+epoch   519 :    141.956
+epoch   520 :    134.358
+epoch   521 :    150.011
+epoch   522 :    136.899
+epoch   523 :    138.795
+epoch   524 :    124.952
+epoch   525 :    142.241
+epoch   526 :    140.136
+epoch   527 :    132.689
+epoch   528 :    136.019
+epoch   529 :    144.971
+epoch   530 :    136.682
+epoch   531 :    133.464
+epoch   532 :    146.452
+epoch   533 :    143.330
+epoch   534 :    141.100
+epoch   535 :    133.693
+epoch   536 :    141.850
+epoch   537 :    151.025
+epoch   538 :    131.800
+epoch   539 :    131.712
+epoch   540 :    133.660
+epoch   541 :    137.259
+epoch   542 :    150.127
+epoch   543 :    137.421
+epoch   544 :    138.422
+epoch   545 :    127.697
+epoch   546 :    135.027
+epoch   547 :    131.249
+epoch   548 :    140.099
+epoch   549 :    134.091
+epoch   550 :    142.848
+epoch   551 :    139.212
+epoch   552 :    149.251
+epoch   553 :    134.327
+epoch   554 :    118.381
+epoch   555 :    118.681
+epoch   556 :    120.090
+epoch   557 :    122.618
+epoch   558 :    137.537
+epoch   559 :    127.918
+epoch   560 :    138.092
+epoch   561 :    118.123
+epoch   562 :    133.182
+epoch   563 :    121.308
+epoch   564 :    129.283
+epoch   565 :    127.158
+epoch   566 :    130.797
+epoch   567 :    127.754
+epoch   568 :    130.815
+epoch   569 :    134.163
+epoch   570 :    126.012
+epoch   571 :    117.686
+epoch   572 :    124.725
+epoch   573 :    118.314
+epoch   574 :    129.082
+epoch   575 :    126.186
+epoch   576 :    123.483
+epoch   577 :    128.786
+epoch   578 :    125.085
+epoch   579 :    118.235
+epoch   580 :    125.678
+epoch   581 :    126.972
+epoch   582 :    125.890
+epoch   583 :    128.475
+epoch   584 :    124.714
+epoch   585 :    129.266
+epoch   586 :    119.870
+epoch   587 :    125.149
+epoch   588 :    126.309
+epoch   589 :    133.061
+epoch   590 :    111.613
+epoch   591 :    137.722
+epoch   592 :    126.618
+epoch   593 :    121.486
+epoch   594 :    124.089
+epoch   595 :    131.132
+epoch   596 :    120.945
+epoch   597 :    132.014
+epoch   598 :    112.259
+epoch   599 :    125.779
+epoch   600 :    131.436
+epoch   601 :    135.709
+epoch   602 :    112.291
+epoch   603 :    111.061
+epoch   604 :    122.309
+epoch   605 :    119.421
+epoch   606 :    116.788
+epoch   607 :    107.861
+epoch   608 :    118.937
+epoch   609 :    116.388
+epoch   610 :    112.644
+epoch   611 :    118.874
+epoch   612 :    116.938
+epoch   613 :    119.882
+epoch   614 :    112.764
+epoch   615 :    116.320
+epoch   616 :    111.401
+epoch   617 :    113.254
+epoch   618 :    111.027
+epoch   619 :    118.196
+epoch   620 :    109.253
+epoch   621 :    107.019
+epoch   622 :    119.103
+epoch   623 :    115.356
+epoch   624 :    108.950
+epoch   625 :    124.970
+epoch   626 :    132.939
+epoch   627 :    114.397
+epoch   628 :    116.979
+epoch   629 :    120.540
+epoch   630 :    117.008
+epoch   631 :    109.233
+epoch   632 :    103.511
+epoch   633 :    110.776
+epoch   634 :    124.130
+epoch   635 :    119.204
+epoch   636 :    110.197
+epoch   637 :    115.783
+epoch   638 :    110.994
+epoch   639 :    115.070
+epoch   640 :    113.539
+epoch   641 :     99.102
+epoch   642 :    111.044
+epoch   643 :    106.595
+epoch   644 :    114.554
+epoch   645 :    107.477
+epoch   646 :    108.409
+epoch   647 :    112.466
+epoch   648 :    123.200
+epoch   649 :    110.518
+epoch   650 :    110.742
+epoch   651 :    100.545
+epoch   652 :    112.868
+epoch   653 :    112.349
+epoch   654 :    120.572
+epoch   655 :    111.484
+epoch   656 :    110.719
+epoch   657 :    110.495
+epoch   658 :    106.422
+epoch   659 :    104.829
+epoch   660 :    109.453
+epoch   661 :    103.514
+epoch   662 :     96.285
+epoch   663 :    101.088
+epoch   664 :    104.382
+epoch   665 :    111.322
+epoch   666 :    112.426
+epoch   667 :     93.807
+epoch   668 :    102.674
+epoch   669 :    112.159
+epoch   670 :    114.741
+epoch   671 :    104.357
+epoch   672 :    108.399
+epoch   673 :    102.606
+epoch   674 :     94.087
+epoch   675 :    112.203
+epoch   676 :     99.609
+epoch   677 :    114.290
+epoch   678 :    106.324
+epoch   679 :     98.170
+epoch   680 :    111.106
+epoch   681 :     95.046
+epoch   682 :    106.130
+epoch   683 :    116.996
+epoch   684 :     96.439
+epoch   685 :    110.886
+epoch   686 :    101.434
+epoch   687 :    111.624
+epoch   688 :     99.251
+epoch   689 :    116.239
+epoch   690 :     99.661
+epoch   691 :     91.068
+epoch   692 :     94.718
+epoch   693 :    108.622
+epoch   694 :    105.398
+epoch   695 :    105.444
+epoch   696 :    115.895
+epoch   697 :     99.572
+epoch   698 :    101.683
+epoch   699 :     96.031
+epoch   700 :    102.349
+epoch   701 :    100.628
+epoch   702 :    103.589
+epoch   703 :     97.451
+epoch   704 :    106.757
+epoch   705 :    107.532
+epoch   706 :     89.230
+epoch   707 :     97.203
+epoch   708 :    103.331
+epoch   709 :     90.745
+epoch   710 :     96.748
+epoch   711 :     92.727
+epoch   712 :    105.969
+epoch   713 :    104.339
+epoch   714 :     94.220
+epoch   715 :     91.035
+epoch   716 :     92.202
+epoch   717 :    100.407
+epoch   718 :     98.366
+epoch   719 :    104.170
+epoch   720 :     99.746
+epoch   721 :     94.391
+epoch   722 :     97.728
+epoch   723 :     95.196
+epoch   724 :    104.617
+epoch   725 :     98.582
+epoch   726 :     99.458
+epoch   727 :     99.561
+epoch   728 :     99.170
+epoch   729 :     97.027
+epoch   730 :    103.219
+epoch   731 :     98.894
+epoch   732 :     84.754
+epoch   733 :     94.341
+epoch   734 :     90.251
+epoch   735 :     86.537
+epoch   736 :     88.569
+epoch   737 :     98.802
+epoch   738 :     99.583
+epoch   739 :     90.803
+epoch   740 :     90.282
+epoch   741 :     88.932
+epoch   742 :     86.957
+epoch   743 :     94.150
+epoch   744 :     95.799
+epoch   745 :     84.705
+epoch   746 :     95.231
+epoch   747 :     98.711
+epoch   748 :     92.654
+epoch   749 :     93.849
+epoch   750 :     92.938
+epoch   751 :    101.202
+epoch   752 :     93.901
+epoch   753 :     92.238
+epoch   754 :     95.934
+epoch   755 :     85.289
+epoch   756 :     97.566
+epoch   757 :     92.999
+epoch   758 :     92.021
+epoch   759 :     96.036
+epoch   760 :     89.006
+epoch   761 :     87.229
+epoch   762 :     88.392
+epoch   763 :     94.196
+epoch   764 :     99.326
+epoch   765 :     95.104
+epoch   766 :    109.259
+epoch   767 :     92.063
+epoch   768 :     94.452
+epoch   769 :     90.737
+epoch   770 :     86.913
+epoch   771 :     99.286
+epoch   772 :     95.764
+epoch   773 :     89.945
+epoch   774 :     91.486
+epoch   775 :     93.862
+epoch   776 :     86.790
+epoch   777 :    103.137
+epoch   778 :     90.168
+epoch   779 :     86.248
+epoch   780 :     92.104
+epoch   781 :     88.832
+epoch   782 :     87.733
+epoch   783 :     88.282
+epoch   784 :     75.627
+epoch   785 :     90.946
+epoch   786 :     89.227
+epoch   787 :     83.531
+epoch   788 :     87.100
+epoch   789 :     85.483
+epoch   790 :     93.989
+epoch   791 :     87.264
+epoch   792 :     92.008
+epoch   793 :     80.692
+epoch   794 :     90.782
+epoch   795 :     96.892
+epoch   796 :    101.327
+epoch   797 :     81.304
+epoch   798 :     95.685
+epoch   799 :     90.952
+epoch   800 :     95.563
+epoch   801 :     87.822
+epoch   802 :     84.573
+epoch   803 :     75.919
+epoch   804 :     84.514
+epoch   805 :     85.365
+epoch   806 :     79.541
+epoch   807 :     88.213
+epoch   808 :     99.589
+epoch   809 :     86.426
+epoch   810 :     88.902
+epoch   811 :     86.878
+epoch   812 :     79.551
+epoch   813 :     82.566
+epoch   814 :     90.179
+epoch   815 :     92.624
+epoch   816 :     84.228
+epoch   817 :     88.775
+epoch   818 :     87.801
+epoch   819 :     94.168
+epoch   820 :     84.559
+epoch   821 :     89.007
+epoch   822 :     81.139
+epoch   823 :     88.634
+epoch   824 :     82.483
+epoch   825 :     81.163
+epoch   826 :     86.645
+epoch   827 :     88.083
+epoch   828 :     91.613
+epoch   829 :     84.784
+epoch   830 :     86.293
+epoch   831 :     79.515
+epoch   832 :     87.723
+epoch   833 :     85.750
+epoch   834 :     75.377
+epoch   835 :     82.307
+epoch   836 :     87.065
+epoch   837 :     89.592
+epoch   838 :     73.430
+epoch   839 :     81.841
+epoch   840 :     91.021
+epoch   841 :     75.404
+epoch   842 :     82.827
+epoch   843 :     84.806
+epoch   844 :     78.369
+epoch   845 :     81.414
+epoch   846 :     91.313
+epoch   847 :     86.819
+epoch   848 :     86.303
+epoch   849 :     78.407
+epoch   850 :     84.944
+epoch   851 :     82.450
+epoch   852 :     86.894
+epoch   853 :     85.216
+epoch   854 :     86.672
+epoch   855 :     80.260
+epoch   856 :     78.766
+epoch   857 :     85.594
+epoch   858 :     78.410
+epoch   859 :     73.657
+epoch   860 :     78.688
+epoch   861 :     73.901
+epoch   862 :     74.651
+epoch   863 :     81.642
+epoch   864 :     82.958
+epoch   865 :     78.561
+epoch   866 :     79.138
+epoch   867 :     85.395
+epoch   868 :     84.966
+epoch   869 :     84.356
+epoch   870 :     89.630
+epoch   871 :     76.903
+epoch   872 :     78.125
+epoch   873 :     75.050
+epoch   874 :     79.493
+epoch   875 :     79.611
+epoch   876 :     85.061
+epoch   877 :     82.115
+epoch   878 :     84.976
+epoch   879 :     71.934
+epoch   880 :     74.563
+epoch   881 :     78.494
+epoch   882 :     81.608
+epoch   883 :     78.706
+epoch   884 :     72.919
+epoch   885 :     75.237
+epoch   886 :     90.151
+epoch   887 :     84.590
+epoch   888 :     77.949
+epoch   889 :     80.983
+epoch   890 :     78.828
+epoch   891 :     80.874
+epoch   892 :     77.609
+epoch   893 :     77.842
+epoch   894 :     84.821
+epoch   895 :     78.478
+epoch   896 :     83.591
+epoch   897 :     81.016
+epoch   898 :     71.630
+epoch   899 :     86.999
+epoch   900 :     80.227
+epoch   901 :     76.795
+epoch   902 :     75.652
+epoch   903 :     82.892
+epoch   904 :     81.362
+epoch   905 :     79.613
+epoch   906 :     79.412
+epoch   907 :     77.247
+epoch   908 :     75.518
+epoch   909 :     87.973
+epoch   910 :     77.648
+epoch   911 :     68.127
+epoch   912 :     73.896
+epoch   913 :     81.049
+epoch   914 :     72.642
+epoch   915 :     68.540
+epoch   916 :     82.510
+epoch   917 :     77.855
+epoch   918 :     76.238
+epoch   919 :     83.501
+epoch   920 :     70.716
+epoch   921 :     96.897
+epoch   922 :     82.190
+epoch   923 :     73.967
+epoch   924 :     72.160
+epoch   925 :     72.820
+epoch   926 :     74.682
+epoch   927 :     72.240
+epoch   928 :     70.507
+epoch   929 :     80.401
+epoch   930 :     76.178
+epoch   931 :     73.245
+epoch   932 :     75.094
+epoch   933 :     81.609
+epoch   934 :     71.885
+epoch   935 :     70.122
+epoch   936 :     77.904
+epoch   937 :     72.106
+epoch   938 :     71.039
+epoch   939 :     73.552
+epoch   940 :     80.166
+epoch   941 :     79.549
+epoch   942 :     74.871
+epoch   943 :     79.444
+epoch   944 :     74.872
+epoch   945 :     79.233
+epoch   946 :     69.435
+epoch   947 :     70.580
+epoch   948 :     71.085
+epoch   949 :     69.711
+epoch   950 :     62.506
+epoch   951 :     74.205
+epoch   952 :     72.892
+epoch   953 :     78.752
+epoch   954 :     72.899
+epoch   955 :     69.960
+epoch   956 :     73.150
+epoch   957 :     77.202
+epoch   958 :     73.452
+epoch   959 :     70.910
+epoch   960 :     75.938
+epoch   961 :     75.679
+epoch   962 :     74.990
+epoch   963 :     67.602
+epoch   964 :     68.393
+epoch   965 :     71.764
+epoch   966 :     71.849
+epoch   967 :     78.403
+epoch   968 :     77.288
+epoch   969 :     72.296
+epoch   970 :     70.143
+epoch   971 :     68.163
+epoch   972 :     75.728
+epoch   973 :     68.135
+epoch   974 :     73.940
+epoch   975 :     71.903
+epoch   976 :     77.542
+epoch   977 :     71.189
+epoch   978 :     64.396
+epoch   979 :     78.411
+epoch   980 :     69.838
+epoch   981 :     81.419
+epoch   982 :     66.996
+epoch   983 :     70.695
+epoch   984 :     66.175
+epoch   985 :     71.101
+epoch   986 :     72.031
+epoch   987 :     75.373
+epoch   988 :     70.851
+epoch   989 :     72.236
+epoch   990 :     79.436
+epoch   991 :     68.040
+epoch   992 :     73.165
+epoch   993 :     79.151
+epoch   994 :     70.477
+epoch   995 :     68.984
+epoch   996 :     67.101
+epoch   997 :     72.928
+epoch   998 :     73.782
+epoch   999 :     72.429
+Positive Triple 7951 8 38768 3.002
+T Negtive Triple 38768 8 38768 2.746
+T Negtive Triple 38768 8 38768 2.714
+T Negtive Triple 38768 8 38768 2.933
+T Negtive Triple 38768 8 38768 2.630
+T Negtive Triple 38768 8 38768 2.840
+T Negtive Triple 38768 8 38768 2.807
+T Negtive Triple 38768 8 38768 2.918
+T Negtive Triple 38768 8 38768 2.788
+T Negtive Triple 38768 8 38768 2.837
+T Negtive Triple 38768 8 38768 2.824
+T Negtive Triple 38768 8 38768 2.957
+T Negtive Triple 38768 8 38768 2.832
+T Negtive Triple 38768 8 38768 2.932
+T Negtive Triple 38768 8 38768 2.816
+T Negtive Triple 38768 8 38768 2.896
+T Negtive Triple 38768 8 38768 2.890
+T Negtive Triple 38768 8 38768 2.920
+T Negtive Triple 38768 8 38768 2.934
+T Negtive Triple 38768 8 38768 2.914
+T Negtive Triple 38768 8 38768 2.960
+T Negtive Triple 38768 8 38768 2.762
+T Negtive Triple 38768 8 38768 2.927
+T Negtive Triple 38768 8 38768 2.943
+T Negtive Triple 38768 8 38768 2.947
+T Negtive Triple 38768 8 38768 2.669
+T Negtive Triple 38768 8 38768 2.906
+T Negtive Triple 38768 8 38768 2.952
+T Negtive Triple 38768 8 38768 2.885
+T Negtive Triple 38768 8 38768 2.879
+T Negtive Triple 38768 8 38768 2.862
+T Negtive Triple 38768 8 38768 2.849
+T Negtive Triple 38768 8 38768 2.957
+T Negtive Triple 38768 8 38768 2.828
+T Negtive Triple 38768 8 38768 2.850
+T Negtive Triple 38768 8 38768 2.889
+T Negtive Triple 38768 8 38768 2.970
+T Negtive Triple 38768 8 38768 2.926
+T Negtive Triple 38768 8 38768 2.589
+T Negtive Triple 38768 8 38768 2.919
+T Negtive Triple 38768 8 38768 2.732
+T Negtive Triple 38768 8 38768 2.841
+T Negtive Triple 38768 8 38768 2.925
+T Negtive Triple 38768 8 38768 2.976
+T Negtive Triple 38768 8 38768 2.875
+T Negtive Triple 38768 8 38768 2.960
+T Negtive Triple 38768 8 38768 2.694
+T Negtive Triple 38768 8 38768 2.891
+T Negtive Triple 38768 8 38768 2.909
+T Negtive Triple 38768 8 38768 2.746
+T Negtive Triple 38768 8 38768 2.965
+T Negtive Triple 38768 8 38768 2.899
+T Negtive Triple 38768 8 38768 2.843
+T Negtive Triple 38768 8 38768 2.892
+T Negtive Triple 38768 8 38768 2.994
+T Negtive Triple 38768 8 38768 2.776
+T Negtive Triple 38768 8 38768 2.912
+T Negtive Triple 38768 8 38768 2.966
+T Negtive Triple 38768 8 38768 2.951
+T Negtive Triple 38768 8 38768 2.953
+T Negtive Triple 38768 8 38768 2.881
+T Negtive Triple 38768 8 38768 2.849
+T Negtive Triple 38768 8 38768 2.910
+T Negtive Triple 38768 8 38768 2.892
+T Negtive Triple 38768 8 38768 2.939
+T Negtive Triple 38768 8 38768 2.924
+T Negtive Triple 38768 8 38768 2.887
+T Negtive Triple 38768 8 38768 2.768
+T Negtive Triple 38768 8 38768 2.988
+T Negtive Triple 38768 8 38768 2.949
+T Negtive Triple 38768 8 38768 2.970
+T Negtive Triple 38768 8 38768 2.974
+T Negtive Triple 38768 8 38768 2.992
+T Negtive Triple 38768 8 38768 2.897
+T Negtive Triple 38768 8 38768 2.969
+T Negtive Triple 38768 8 38768 2.921
+T Negtive Triple 38768 8 38768 2.951
+T Negtive Triple 38768 8 38768 2.709
+T Negtive Triple 38768 8 38768 2.849
+T Negtive Triple 38768 8 38768 2.931
+T Negtive Triple 38768 8 38768 2.791
+T Negtive Triple 38768 8 38768 2.905
+T Negtive Triple 38768 8 38768 2.708
+T Negtive Triple 38768 8 38768 2.930
+T Negtive Triple 38768 8 38768 2.875
+T Negtive Triple 38768 8 38768 2.940
+T Negtive Triple 38768 8 38768 2.842
+T Negtive Triple 38768 8 38768 2.869
+T Negtive Triple 38768 8 38768 2.954
+T Negtive Triple 38768 8 38768 2.897
+T Negtive Triple 38768 8 38768 2.895
+T Negtive Triple 38768 8 38768 2.910
+T Negtive Triple 38768 8 38768 2.837
+T Negtive Triple 38768 8 38768 2.976
+T Negtive Triple 38768 8 38768 2.984
+T Negtive Triple 38768 8 38768 2.937
+T Negtive Triple 38768 8 38768 2.941
+T Negtive Triple 38768 8 38768 2.822
+T Negtive Triple 38768 8 38768 2.914
+T Negtive Triple 38768 8 38768 2.906
+T Negtive Triple 38768 8 38768 2.953
+T Negtive Triple 38768 8 38768 2.834
+T Negtive Triple 38768 8 38768 2.902
+T Negtive Triple 38768 8 38768 2.957
+T Negtive Triple 38768 8 38768 2.962
+T Negtive Triple 38768 8 38768 2.832
+T Negtive Triple 38768 8 38768 2.912
+T Negtive Triple 38768 8 38768 2.743
+T Negtive Triple 38768 8 38768 2.893
+T Negtive Triple 38768 8 38768 2.987
+T Negtive Triple 38768 8 38768 2.837
+T Negtive Triple 38768 8 38768 2.870
+T Negtive Triple 38768 8 38768 2.932
+T Negtive Triple 38768 8 38768 2.843
+T Negtive Triple 38768 8 38768 2.873
+T Negtive Triple 38768 8 38768 2.782
+T Negtive Triple 38768 8 38768 2.892
+T Negtive Triple 38768 8 38768 2.988
+T Negtive Triple 38768 8 38768 2.730
+T Negtive Triple 38768 8 38768 2.890
+T Negtive Triple 38768 8 38768 2.952
+T Negtive Triple 38768 8 38768 2.781
+T Negtive Triple 38768 8 38768 2.906
+T Negtive Triple 38768 8 38768 2.999
+T Negtive Triple 38768 8 38768 2.748
+T Negtive Triple 38768 8 38768 2.977
+T Negtive Triple 38768 8 38768 2.946
+T Negtive Triple 38768 8 38768 2.932
+T Negtive Triple 38768 8 38768 2.929
+T Negtive Triple 38768 8 38768 2.813
+T Negtive Triple 38768 8 38768 2.822
+T Negtive Triple 38768 8 38768 2.767
+T Negtive Triple 38768 8 38768 2.997
+T Negtive Triple 38768 8 38768 2.903
+T Negtive Triple 38768 8 38768 2.941
+T Negtive Triple 38768 8 38768 2.837
+T Negtive Triple 38768 8 38768 2.916
+T Negtive Triple 38768 8 38768 2.796
+T Negtive Triple 38768 8 38768 2.880
+T Negtive Triple 38768 8 38768 2.968
+T Negtive Triple 38768 8 38768 2.943
+T Negtive Triple 38768 8 38768 2.930
+T Negtive Triple 38768 8 38768 2.949
+T Negtive Triple 38768 8 38768 2.758
+T Negtive Triple 38768 8 38768 2.924
+T Negtive Triple 38768 8 38768 2.843
+T Negtive Triple 38768 8 38768 2.974
+T Negtive Triple 38768 8 38768 2.963
+T Negtive Triple 38768 8 38768 2.880
+T Negtive Triple 38768 8 38768 2.911
+T Negtive Triple 38768 8 38768 2.820
+T Negtive Triple 38768 8 38768 2.745
+T Negtive Triple 38768 8 38768 2.838
+T Negtive Triple 38768 8 38768 2.807
+T Negtive Triple 38768 8 38768 2.913
+T Negtive Triple 38768 8 38768 2.981
+T Negtive Triple 38768 8 38768 2.963
+T Negtive Triple 38768 8 38768 2.954
+T Negtive Triple 38768 8 38768 2.719
+T Negtive Triple 38768 8 38768 2.757
+T Negtive Triple 38768 8 38768 2.971
+T Negtive Triple 38768 8 38768 2.919
+T Negtive Triple 38768 8 38768 2.817
+T Negtive Triple 38768 8 38768 2.946
+T Negtive Triple 38768 8 38768 2.834
+T Negtive Triple 38768 8 38768 2.957
+T Negtive Triple 38768 8 38768 2.948
+T Negtive Triple 38768 8 38768 2.937
+T Negtive Triple 38768 8 38768 2.863
+T Negtive Triple 38768 8 38768 2.833
+T Negtive Triple 38768 8 38768 2.952
+T Negtive Triple 38768 8 38768 2.886
+T Negtive Triple 38768 8 38768 2.661
+T Negtive Triple 38768 8 38768 2.903
+T Negtive Triple 38768 8 38768 2.833
+T Negtive Triple 38768 8 38768 2.885
+T Negtive Triple 38768 8 38768 2.851
+T Negtive Triple 38768 8 38768 2.916
+T Negtive Triple 38768 8 38768 2.868
+T Negtive Triple 38768 8 38768 2.960
+T Negtive Triple 38768 8 38768 2.973
+T Negtive Triple 38768 8 38768 2.933
+T Negtive Triple 38768 8 38768 2.718
+T Negtive Triple 38768 8 38768 2.920
+T Negtive Triple 38768 8 38768 2.944
+T Negtive Triple 38768 8 38768 2.817
+T Negtive Triple 38768 8 38768 2.935
+T Negtive Triple 38768 8 38768 2.953
+T Negtive Triple 38768 8 38768 2.925
+T Negtive Triple 38768 8 38768 2.883
+T Negtive Triple 38768 8 38768 2.956
+T Negtive Triple 38768 8 38768 2.946
+T Negtive Triple 38768 8 38768 2.862
+T Negtive Triple 38768 8 38768 2.820
+T Negtive Triple 38768 8 38768 2.936
+T Negtive Triple 38768 8 38768 2.869
+T Negtive Triple 38768 8 38768 2.791
+T Negtive Triple 38768 8 38768 2.862
+T Negtive Triple 38768 8 38768 2.852
+T Negtive Triple 38768 8 38768 2.779
+T Negtive Triple 38768 8 38768 2.912
+T Negtive Triple 38768 8 38768 2.703
+T Negtive Triple 38768 8 38768 2.830
+T Negtive Triple 38768 8 38768 2.901
+T Negtive Triple 38768 8 38768 2.674
+T Negtive Triple 38768 8 38768 2.883
+T Negtive Triple 38768 8 38768 2.897
+T Negtive Triple 38768 8 38768 2.859
+T Negtive Triple 38768 8 38768 2.901
+T Negtive Triple 38768 8 38768 2.923
+T Negtive Triple 38768 8 38768 2.763
+T Negtive Triple 38768 8 38768 2.955
+T Negtive Triple 38768 8 38768 2.603
+T Negtive Triple 38768 8 38768 2.935
+T Negtive Triple 38768 8 38768 2.962
+T Negtive Triple 38768 8 38768 2.875
+T Negtive Triple 38768 8 38768 2.920
+T Negtive Triple 38768 8 38768 2.922
+T Negtive Triple 38768 8 38768 2.650
+T Negtive Triple 38768 8 38768 2.950
+T Negtive Triple 38768 8 38768 2.756
+T Negtive Triple 38768 8 38768 2.998
+T Negtive Triple 38768 8 38768 2.859
+T Negtive Triple 38768 8 38768 2.838
+T Negtive Triple 38768 8 38768 2.945
+Positive Triple 20391 14 18987 1.568
+T Negtive Triple 18987 14 18987 1.476
+H Negtive Triple 18987 14 18987 0.200
+T Negtive Triple 18987 14 18987 0.200
+237.838 0.809 222.696 0.966 243.736 0.825 230.556 0.968
+raw: mean 240.787 hit10 0.817
+filter: mean 226.626hit10 0.967

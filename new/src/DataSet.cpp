@@ -21,6 +21,7 @@ void DataSet::readTriples(const std::string & filename, std::vector<Triple> & ta
         temp.t = _entity2id[stt];
         temp.f = (stf == 1);
         target.push_back(temp);
+    
         if (temp.f)
             func(temp);
     }
@@ -38,7 +39,15 @@ DataSet::DataSet(const std::string & name) : _NAME(name) {
     while (fin >> str >> id)
         _relation2id[str] = id;
     fin.close();
-    if( name.length() > 4){
+
+    if( name.length() <= 5){
+        fin.open(("data/" + name + "/" + "relationClass.txt").c_str());
+        while(fin >> str >> id)
+            _relationClass[_relation2id[str]] = id;
+    }
+
+
+    if( name.length() > 5){
         fin.open(("data/" + name + "/" + "ookbEntity.txt").c_str());
         while(fin >> str)
             _outentity.insert(_entity2id[str]);

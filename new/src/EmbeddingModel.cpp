@@ -160,6 +160,13 @@ void EmbeddingModel::runLinkPredictionTest(std::ostream & os, unsigned threadnum
                     trsum += traw;
                     tfiltered = traw - tfiltered;
                     tfsum += tfiltered;
+                  /*  os_lock.lock();
+                    os << _ds.getEntityName(_ds.testset()[i].h) << '\t' << _ds.getRelationName(_ds.testset()[i].r)<<'\t'
+                    <<_ds.getEntityName(_ds.testset()[i].t)<<'\t' << hraw << '\t' << traw << std::endl;
+                    os_lock.unlock();
+                    */
+
+
                     if (traw <= 10) ++trhit;
                     if (tfiltered <= 10) ++tfhit;
                 }
@@ -216,6 +223,16 @@ void EmbeddingModel::runClassificationTest(std::ostream & os) const {
     for (unsigned i = 0; i < _ds.testSize(); ++i)
         if (test[i].t->f ^ test[i].score > bestThres)
             ++correctnum;
+            
+           /* os << _ds.getEntityName(_ds.testset()[i].h) << '\t' << _ds.getRelationName(_ds.testset()[i].r)<<'\t'
+                    <<_ds.getEntityName(_ds.testset()[i].t)<<'\t' << '1'<< std::endl;
+           
+
+        }
+        else{
+            os << _ds.getEntityName(_ds.testset()[i].h) << '\t' << _ds.getRelationName(_ds.testset()[i].r)<<'\t'
+                    <<_ds.getEntityName(_ds.testset()[i].t)<<'\t' << "-1" << std::endl;
+        }*/
     os << static_cast<float>(correctnum)/_ds.testSize() << std::endl;
 
     delete[] test;
@@ -261,11 +278,26 @@ float EmbeddingModel::update(const std::pair<Triple, Triple> * samples, unsigned
 }
 
 void EmbeddingModel::resetNegTriples() {
+
+    std::map<unsigned, unsigned> relationClass = _ds.getRelationClass();
+
     for (unsigned i = 0; i < _ds.updateSize(); ++i)
         if (!(_ds.updateset() + i)->f) {
-            vecReset(vh(*(_ds.updateset() + i)), _dim);
+            const Triple & tmpi = _ds.updateset()[i];
+
+            if (relationClass[tmpi.r] == 3){  //1-to-many
+                vecReset(vt(*(_ds.updateset() + i)), _dim);
+                
+            } 
+            else if (relationClass[tmpi.r] == 4){ // many-to-1
+                vecReset(vh(*(_ds.updateset() + i)), _dim);
+            }
+            else
+
+            //vecReset(vh(*(_ds.updateset() + i)), _dim);
             //vecReset(vr(*(_ds.updateset() + i)), _dim);
             vecReset(vt(*(_ds.updateset() + i)), _dim);
+
         }
 }
 

@@ -62,10 +62,12 @@ private:
 
     const std::string _NAME;
 
+
     dictionary _entity2id, _relation2id;
     std::string * _id2entity, * _id2relation;
 
-    std::set<unsigned> _outentity;
+    std::set<unsigned> _outentity;  
+    std::map<unsigned, unsigned>_relationClass;    
 
     Triple * _all, * _pos_hrt, * _ptu, *_pt, * _pos_rht, * _pos_trh;
     Triple * _trainset, * _updateset, * _testset, * _validset;
@@ -160,6 +162,9 @@ public:
         return _outentity;
     }
 
+    inline  std::map<unsigned,unsigned> & getRelationClass() {
+        return _relationClass;
+    }
     ~DataSet();
 };
 

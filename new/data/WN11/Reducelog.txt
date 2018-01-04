@@ -1,0 +1,2 @@
+./WN11/update.txt	PosTriples	5000NegTriple	1964
+./WN11/update1.txt	PosTriples	5000NegTriple	764
