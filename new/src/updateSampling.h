@@ -69,6 +69,9 @@ protected:
 public:
     explicit updateSampling(const DataSet & ds, floatType alpha = 1, bool with_update_set = true);
     void output(std::ostream & os) const;
+    inline std::string methodName() const {
+        return "update";
+    }
     ~updateSampling();
 };
 
