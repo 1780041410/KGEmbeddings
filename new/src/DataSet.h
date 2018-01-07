@@ -67,7 +67,7 @@ private:
     std::string * _id2entity, * _id2relation;
 
     std::set<unsigned> _outentity;  
-    std::map<unsigned, unsigned>_relationClass;    
+    std::map<unsigned, unsigned>_relationClass;
 
     Triple * _all, * _pos_hrt, * _ptu, *_pt, * _pos_rht, * _pos_trh;
     Triple * _trainset, * _updateset, * _testset, * _validset;
@@ -79,9 +79,11 @@ private:
 protected:
     void readTriples(const std::string & filename, std::vector<Triple> & target,
             const std::function<void(const Triple &)> & func);
+    void wash(const std::set<Triple> negTriples, Triple * array, unsigned & size);
 
 public:
     explicit DataSet(const std::string & name);
+    void wash();
 
     inline const Triple * getIndex_r(unsigned r) const {
         return _pos_rht + _head_by_r[r];

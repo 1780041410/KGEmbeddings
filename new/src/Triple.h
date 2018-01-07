@@ -10,6 +10,9 @@ struct Triple {
     inline Triple symm() const {
         return Triple(t, r, h, f);
     }
+    inline Triple anti() const {
+        return Triple(h, r, t, !f);
+    }
     inline bool operator<(const Triple & other) const {
         if (h < other.h) return true;
         if (h > other.h) return false;

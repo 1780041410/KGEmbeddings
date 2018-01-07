@@ -40,14 +40,14 @@ DataSet::DataSet(const std::string & name) : _NAME(name) {
         _relation2id[str] = id;
     fin.close();
 
-    if( name.length() <= 5){
+    if (name.length() <= 5) {
         fin.open(("data/" + name + "/" + "relationClass.txt").c_str());
         while(fin >> str >> id)
             _relationClass[_relation2id[str]] = id;
     }
 
 
-    if( name.length() > 5){
+    if (name.length() > 5) {
         fin.open(("data/" + name + "/" + "ookbEntity.txt").c_str());
         while(fin >> str)
             _outentity.insert(_entity2id[str]);
@@ -179,4 +179,21 @@ DataSet::~DataSet() {
     delete []_head_by_h;
     delete []_head_by_r;
     delete []_head_by_t;
+}
+
+void DataSet::wash() {
+    std::set<Triples> negTriples;
+    for (unsigned i = 0; i < _updatesize; ++i)
+        if (!_updateset[i].f)
+            negTriples.insert(_updateset[i].anti());
+    wash(negTriples, _ptu, _ptusize);
+    wash(negTriples, _pos_hrt, _possize);
+}
+
+void DataSet::wash(const std::set<Triple> negTriples, Triple * array, unsigned & size) {
+    for (unsigned i = 0, next = 0; i < size; ++next)
+        if (negTriples.find(array[next]) == negTriples.end()) {
+            array[i++] = array[next];
+            --size;
+        }
 }
