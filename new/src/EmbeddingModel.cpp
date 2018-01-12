@@ -280,7 +280,7 @@ float EmbeddingModel::update(const std::pair<Triple, Triple> * samples, unsigned
 void EmbeddingModel::resetNegTriples() {
 
     std::map<unsigned, unsigned> relationClass = _ds.getRelationClass();
-
+    _ds.wash();
     for (unsigned i = 0; i < _ds.updateSize(); ++i)
         if (!(_ds.updateset() + i)->f) {
             const Triple & tmpi = _ds.updateset()[i];
