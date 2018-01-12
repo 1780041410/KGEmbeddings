@@ -182,7 +182,7 @@ DataSet::~DataSet() {
 }
 
 void DataSet::wash() {
-    std::set<Triples> negTriples;
+    std::set<Triple> negTriples;
     for (unsigned i = 0; i < _updatesize; ++i)
         if (!_updateset[i].f)
             negTriples.insert(_updateset[i].anti());
