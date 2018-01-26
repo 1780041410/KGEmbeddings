@@ -85,15 +85,9 @@ TransH::~TransH() {
 }
 
 void TransH::resetNegTriples() {
-    /*for (unsigned i = 0; i < _ds.updateSize(); ++i)
-        if (!(_ds.updateset() + i)->f) {
-            //vecReset(vh(*(_ds.updateset() + i)), _dim);
-            //vecReset(vr(*(_ds.updateset() + i)), _dim);
-            //vecReset(vt(*(_ds.updateset() + i)), _dim);
-            //vecReset(vrp(*(_ds.updateset() + i)), _dim);
-        }*/
+ 
     std::map<unsigned, unsigned> relationClass = _ds.getRelationClass();
-
+    _ds.wash();
     for (unsigned i = 0; i < _ds.updateSize(); ++i)
         if (!(_ds.updateset() + i)->f) {
             const Triple & tmpi = _ds.updateset()[i];
@@ -107,9 +101,57 @@ void TransH::resetNegTriples() {
             }
             else
 
-            //vecReset(vh(*(_ds.updateset() + i)), _dim);
-            //vecReset(vr(*(_ds.updateset() + i)), _dim);
             vecReset(vt(*(_ds.updateset() + i)), _dim);
 
         }
+}
+
+void TransH::resetOutEntity(const std::string & pooling) {
+    const std::set<unsigned> & outEntity = _ds.outentity();
+    std::set<unsigned>::iterator it;
+
+    for (unsigned i = 0; i < _ds.updateSize(); ++i){
+        std::vector<unsigned> neighborH,neighborT;
+        const Triple & tmpi = _ds.updateset()[i];
+        it = outEntity.find(tmpi.h);
+        if (it != outEntity.end()) {  //head pooling
+            for (unsigned j = 0; j < _ds.updateSize(); ++j)
+                if (i != j) {
+                    const Triple & tmpj = _ds.updateset()[j];
+                    if(tmpi.r == tmpj.r && tmpi.t == tmpj.t)
+                        neighborH.push_back(tmpj.h);
+                }
+            if(pooling == "average")
+                vecPooling(tmpi.h, neighborH);
+            //else
+               // maxPooling(tmpi.h, neighborH);
+        }   
+
+
+        it = outEntity.find(tmpi.t);
+        if(it != outEntity.end()) {
+            for (unsigned j = 0; j < _ds.updateSize(); ++j)
+                if(i != j) {
+                    const Triple & tmpj = _ds.updateset()[j];
+                    if(tmpi.r == tmpj.r && tmpi.h == tmpj.h)
+                        neighborT.push_back(tmpj.t);
+                }
+            if(pooling == "average")
+                vecPooling(tmpi.t,neighborT); // repalce with maxPooling()
+            else 
+                maxPooling(tmpi.t, neighborT); 
+        }
+    }
+}
+
+void TransH::vecPooling(unsigned eid, const std::vector<unsigned> & neighbors) {
+    if (!neighbors.empty()) {
+        float * vec = _ed->second[eid];
+        for (unsigned i = 0; i < _dim; ++i)
+            vec[i] = 0;
+        for (auto & neighbor : neighbors)
+            for (unsigned i = 0; i < _dim; ++i)
+                vec[i] += _ed->second[neighbor][i];
+        norm(vec, _dim);
+    }
 }
